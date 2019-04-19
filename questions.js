@@ -40,7 +40,7 @@ var deleteArrayLastElement = function (languages) {
   languages.pop();
   return languages;
 }
-  // 'Faire de la chaîne "socialMediaInString" un tableau "socialMedia"'
+  // Faire de la chaîne "socialMediaInString" un tableau "socialMedia"
   var stringToArray = function (socialMediaInString) {
   socialMedia = socialMediaInString.split(',');
   return socialMedia;
@@ -48,7 +48,8 @@ var deleteArrayLastElement = function (languages) {
 // Faire du tableau "languages" une chaîne "languagesInString". Séparer les languages par une virgule
 var arrayToString = function (languages) {
   var languages = ['CSS', 'Javascript', 'PHP', 'Ruby'];
-  languagesInString = languages.toString('');
+  // languagesInString = languages.toString('');  // c'est bien aussi, mais c'est plus propre join
+  languagesInString = languages.join();
   return languagesInString;
 }
 
